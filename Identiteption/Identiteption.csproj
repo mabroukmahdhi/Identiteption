@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\Foundations\" />
+    <Folder Include="Services\Orchestrations\" />
+    <Folder Include="Services\Processings\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xeption" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
