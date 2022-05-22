@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Brokers\" />
+    <Folder Include="Models\" />
     <Folder Include="Services\Foundations\" />
     <Folder Include="Services\Orchestrations\" />
     <Folder Include="Services\Processings\" />

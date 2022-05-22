@@ -1,5 +1,7 @@
 ﻿// ---------------------------------------------------------------
-// Copyright (c) Coalition of the Good-Hearted Engineers
+// Copyright (c) Mabrouk Mahdhi
+// Licensed under the MIT License.
+// See License.txt in the project root for license information.
 // ---------------------------------------------------------------
 using ADotNet.Clients;
 using ADotNet.Models.Pipelines.GithubPipelines.DotNets;
