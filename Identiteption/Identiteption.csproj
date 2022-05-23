@@ -10,9 +10,12 @@
     <RepositoryUrl>https://github.com/mabroukmahdhi/Identiteption</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
     <PackageTags>Dotnet Identity Exception IdentityResult</PackageTags>
-    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <PackageReleaseNotes>Extension 'Throw()' added</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
+    <Authors>Mabrouk Mahdhi</Authors>
+    <Description>.Net Library that throws exceptions based on Microsoft Identity Result &lt;IdentityResult&gt;.</Description>
   </PropertyGroup>
 
   <ItemGroup>
