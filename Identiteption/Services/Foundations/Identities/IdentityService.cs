@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Identiteption.Services.Foundations.Identities
 {
-    public class IdentityService : IIdentityService
+    public class IdentityService : IIdentityService,IDisposable
     {
         private readonly IDictionary<string, string> exceptionsDictionairy =
             new Dictionary<string, string>()
@@ -130,6 +130,11 @@ namespace Identiteption.Services.Foundations.Identities
             }
 
             return identityServiceException;
+        }
+
+        public void Dispose()
+        {
+            
         }
     }
 }

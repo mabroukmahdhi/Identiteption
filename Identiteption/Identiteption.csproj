@@ -11,7 +11,8 @@
     <RepositoryType>github</RepositoryType>
     <PackageTags>Dotnet Identity Exception IdentityResult</PackageTags>
     <PackageReleaseNotes>First release</PackageReleaseNotes>
-    <PackageLicenseFile>..\LICENSE.txt</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
