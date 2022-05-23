@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="15%" height="15%" src="https://github.com/mabroukmahdhi/Identiteption/blob/main/Assets/logo.png?raw=true">
+</p>
+
 # Identiteption
 .Net Library that throws exceptions based on Microsoft Identity Result `IdentityResult`.
 
