@@ -84,5 +84,26 @@ namespace Identiteption.Tests.Unit.Services.Foundations.Identities
 
             createAndThrowAction.Should().Throw<IdentityValidationException>();
         }
+
+        [Theory]
+        [InlineData("ConcurrencyFailure")]
+        [InlineData("RecoveryCodeRedemptionFailed")]
+        public void ShouldThrowFailedServiceException(string errorCode)
+        {
+            // given
+            string randomMessage = GetRandomString();
+            var inputIdentityResult = IdentityResult.Failed(new IdentityError()
+            {
+                Code = errorCode,
+                Description = randomMessage
+            });
+
+            // when
+            Action createAndThrowAction = () => this.identityService.CreateAndThrowIdentityException(inputIdentityResult);
+
+            // then
+
+            createAndThrowAction.Should().Throw<FailedIdentityServiceException>();
+        }
     }
 }
