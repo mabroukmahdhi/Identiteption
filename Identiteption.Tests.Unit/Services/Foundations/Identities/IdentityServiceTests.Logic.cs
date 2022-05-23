@@ -14,6 +14,19 @@ namespace Identiteption.Tests.Unit.Services.Foundations.Identities
 {
     public partial class IdentityServiceTests
     {
+        [Fact]
+        public void ShouldThrowValidationExceptionIfIdentityResultIsNull()
+        {
+            // given
+            IdentityResult inputIdentityResult = null;
+
+            // when
+            Action createAndThrowAction = () => this.identityService.CreateAndThrowIdentityException(inputIdentityResult);
+
+            // then
+            createAndThrowAction.Should().Throw<IdentityValidationException>();
+        }
+
         [Theory]
         [InlineData("DefaultError")]
         [InlineData("LoginAlreadyAssociated")]
