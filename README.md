@@ -60,3 +60,12 @@ There are three types of exceptions that can be thrown: `IdentityValidationExcep
 | UserAlreadyInRole | X |  |  |
 | UserLockoutNotEnabled |  |  | X |
 | UserNotInRole|  |  | X |
+
+# Usage
+It is very easy and simple to use this, you only need to call the extension `Throw`:
+
+```cs
+IdentityResult identityResult = ....;
+
+identityResult.Throw();
+```
