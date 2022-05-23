@@ -3,8 +3,6 @@ using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Identiteption.Services.Foundations.Identities
 {
@@ -50,8 +48,8 @@ namespace Identiteption.Services.Foundations.Identities
             SelectAndThrow(identityResult.Errors, nameof(IdentityValidationException));
 
             SelectAndThrow(identityResult.Errors, nameof(IdentityServiceException));
-            
-            SelectAndThrow(identityResult.Errors, nameof(FailedIdentityServiceException)); 
+
+            SelectAndThrow(identityResult.Errors, nameof(FailedIdentityServiceException));
         }
 
         private void SelectAndThrow(IEnumerable<IdentityError> errors, string exceptionName)

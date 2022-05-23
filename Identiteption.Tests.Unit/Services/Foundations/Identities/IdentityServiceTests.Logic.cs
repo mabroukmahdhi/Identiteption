@@ -51,7 +51,7 @@ namespace Identiteption.Tests.Unit.Services.Foundations.Identities
         }
 
         [Theory]
-        [InlineData("DuplicateEmail")] 
+        [InlineData("DuplicateEmail")]
         [InlineData("DuplicateRoleName")]
         [InlineData("DuplicateUserName")]
         [InlineData("InvalidEmail")]
